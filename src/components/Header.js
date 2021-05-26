@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom"
 
 const NavMenu = styled.div`
   align-items: center;
@@ -97,18 +98,18 @@ const Header = (props) => {
             <h1>MOVIES</h1>
         </Logo>
         <NavMenu>
-            <a href="/">
+            <Link to={"/"}>
               <img src="/images/home-icon.svg" alt="HOME" />
               <span>HOME</span>
-            </a>
-            <a href="/movies">
+            </Link>
+            <Link to={"/movies"}>
               <img src="/images/search-icon.svg" alt="SEARCH" />
               <span>SEARCH</span>
-            </a>
-            <a href="/movies">
+            </Link>
+            <Link to={'/movies'}>
               <img src="/images/movie-icon.svg" alt="MOVIES" />
               <span>MOVIES</span>
-            </a>
+            </Link>
           </NavMenu>
     </Nav>
     </>
